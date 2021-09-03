@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .test {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 15%;
+        }
+        
+        .pagination {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .pageLink,
+        .pageLink:link {
+            text-decoration: none;
+            color: #087f5b;
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .iconBtn {
+            background-color: #ffffff;
+            box-shadow: none;
+            border: 1px solid #087f5b;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        i {
+            color: #087f5b;
+        }
+        
+        .iconBtn:hover,
+        .iconBtn:hover i {
+            color: white;
+            background-color: #087f5b;
+        }
+        
+        .pagination .linkActive,
+        .pageLink:hover,
+        .pageLink:active {
+            background-color: #087f5b;
+            color: #ffffff;
+        }
+    </style>
+    <title>Pagination</title>
+</head>
+
+<body>
+    <div class="test">
+        <div class="pagination">
+            <button class="iconBtn btnPrevious">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+            <a href="#" class="pageLink linkActive">1</a>
+            <a href="#" class="pageLink">2</a>
+            <a href="#" class="pageLink">3</a>
+            <a href="#" class="pageLink">4</a>
+            <a href="#" class="pageLink">5</a>
+            <a href="#" class="pageLink">6</a>
+            <a href="#" class="pageLink">7</a>
+            <span href="#" class="pageLink">...</span>
+            <a href="#" class="pageLink">50</a>
+            <button class="iconBtn btnPrevious">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
+        </div>
+    </div>
+</body>
+
+</html>

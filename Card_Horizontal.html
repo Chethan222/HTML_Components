@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />-->
+    <style>
+        /*
+      Green:#67b26f
+      Blue:#4ca2cd
+      Mid:#5aaa9d
+      
+      */
+        
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            color: #444;
+            font-family: "Roboto";
+            font-size: 62.5%;
+            background-repeat: no-repeat;
+            padding: 100px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card_Horizontal {
+            font-family: "Roboto";
+            background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+            background-repeat: no-repeat;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            align-items: center;
+        }
+        
+        .card_ImageBox {
+            display: flex;
+            flex: 0 0 35%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card_Image {
+            display: block;
+            width: 100%;
+        }
+        
+        .card_Content {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        
+        .card_Side_Title {
+            flex: 0 0 50px;
+            writing-mode: vertical-lr;
+            color: #ffffff;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card_Content_Title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        
+        .card_Content_Title h1 {
+            font-size: 2.2rem;
+            margin-right: 20px;
+        }
+        
+        .card_Content_tag {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 5px;
+            border-radius: 90px;
+        }
+        
+        .tag_1 {
+            background-color: #4ca2cd;
+            margin-right: 6px;
+        }
+        
+        .tag_2 {
+            background-color: #67b26f;
+        }
+        
+        .card_Content_Description {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        
+        .card_Content_Description p {
+            text-align: justify;
+        }
+        
+        .card_Content_MoreInfo {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .card_Content_MoreInfo div {
+            margin-right: 20px;
+        }
+        
+        .card_Content__Customer_Info li {
+            list-style: none;
+        }
+    </style>
+    <title>Card Horizontal</title>
+</head>
+
+<body>
+    <figure class="card_Horizontal">
+        <div class="card_ImageBox">
+            <img class="card_Image" src="dog.jpg" alt="Dog image.jpg" />
+        </div>
+        <div class="card_Content">
+            <div class="card_Content_Title">
+                <h1>Get your favourite dog🐶</h1>
+                <div class="card_Content_tag tag_1">#DogLover</div>
+                <div class="card_Content_tag tag_2">#Care</div>
+            </div>
+            <div class="card_Content_Description">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem jwjjb wjhvgjshws swswjgw w sn wssgwwc jhwsvgMagni aperiam soluta molestias? Iusto maiores perspic.
+                </p>
+            </div>
+            <div class="card_Content_MoreInfo">
+                <div>
+                    <ul class="card_Content__Customer_Info">
+                        <li>👲Seller</li>
+                        <li>Mr. Rock Joker</li>
+                        <li>Dog Surgeon</li>
+                        <li>📱+91 2453765456</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card_Side_Title">₹5000</div>
+    </figure>
+</body>
+
+</html>
